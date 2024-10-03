@@ -6,9 +6,8 @@
 
 def pascal_triangle(n):
     """
-    Returns an empty list if n <= 0 else 
-    itll return a list of integers adding eash other
-    """
+    Returns an empty list if n <= 0 else
+    itll return a list of integers adding eash other. """
 
     k = []
     if n <= 0:
