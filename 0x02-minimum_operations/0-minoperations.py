@@ -5,17 +5,14 @@
 def minOperations(n: int) -> int:
     """Minmum operations needed to get n H characters."""
 
-    nxt = 'H'
-    body = 'H'
-    oper = 0
-    while (len(body) < n):
-        if n % len(body) == 0:
-            oper += 2
-            nxt = body
-            body += body
-        else:
-            oper += 1
-            body += nxt
-    if len(body) != n:
+    if n < 2:
         return 0
-    return oper
+    operations = 0
+    divisor = 2
+
+    while n > 1:
+        while n % divisor == 0:
+            operations += divisor
+            n //= divisor
+        divisor += 1
+    return operations
