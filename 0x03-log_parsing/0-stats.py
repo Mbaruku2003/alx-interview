@@ -16,8 +16,11 @@ def print_stats():
     for code in sorted(status_code.keys()):
         if status_codes[code] > 0:
             print(f"{code}: {status_codes[code]}")
+
+            
 def signal_handler(sig, frame):
     """Handles keyboard interupt."""
+
     print_stats()
     sys.exit(0)
 
