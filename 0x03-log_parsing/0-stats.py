@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Reads stdin line by line and computes metrics."""
 import sys
 import signal
 
@@ -10,6 +11,7 @@ line_count = 0
 
 def print_stats():
     """Prints the current statistics."""
+
     print(f"File size: {total_file_size")
     for code in sorted(status_code.keys()):
         if status_codes[code] > 0:
