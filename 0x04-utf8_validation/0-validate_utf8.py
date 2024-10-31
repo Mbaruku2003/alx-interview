@@ -8,7 +8,7 @@ def get_leading_set_bits(num):
     helper = 1 << 7
     while helper & num:
         set_bits += 1
-        helper = helper >> 1
+        helper >>= 1
     return set_bits
 
 
