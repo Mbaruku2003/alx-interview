@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function that gives the change."""
 
+
 def makeChange(coins, total):
     """If the total is 0 or less return 0."""
 
